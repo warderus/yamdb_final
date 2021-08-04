@@ -9,7 +9,7 @@ services:
     env_file:
       - ./.env
   web:
-    image: warderus/yamdb:v2.1.19
+    build: .
     restart: always
     volumes:
       - static_value:/code/static/
