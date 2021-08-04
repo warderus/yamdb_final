@@ -14,5 +14,8 @@ class TestDockerfileCompose:
             assert False, 'Проверьте, что добавили файл docker-compose.yaml'
 
         assert re.search(r'image:\s+postgres:', docker_compose), (
-            'Проверьте, что добавили образ postgres:latest в файл docker-compose.yaml1'
+            'Проверьте, что добавили образ postgres:latest в файл docker-compose.yaml'
+        )
+        assert re.search(r'image:\s+([a-zA-Z0-9]+)\/([a-zA-Z0-9_\.])+(\:[a-zA-Z0-9_-]+)?', docker_compose), (
+            'Проверьте, что добавили сборку контейнера из образа на вашем DockerHub в файл docker-compose.yaml'
         )
