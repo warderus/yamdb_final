@@ -41,4 +41,4 @@ YaMDB отправляет письмо с кодом подтверждения
 
 Алексей Легостев Роль: Developer; develop: приложение Api: модели, вьюхи, сериалайзеры, эндпоинты для Review, Comment
 
-[![Django-app workflow](https://github.com/warderus/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master&event=deployment_status)](https://github.com/warderus/yamdb_final/actions/workflows/yamdb_workflow.yml)
+[![Django-app workflow](https://github.com/warderus/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg?branch=master)](https://github.com/warderus/yamdb_final/actions/workflows/yamdb_workflow.yml)
