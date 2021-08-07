@@ -13,7 +13,8 @@ services:
     container_name: web
     image: warderus/yamdb:v5.11.1989
     restart: always
-    command: python3 manage.py collectstatic --no-input && python3 manage.py migrate --noinput
+    ports:
+      - "8000:8000" 
     volumes:
       - static_value:/code/static/
       - media_value:/code/media/
